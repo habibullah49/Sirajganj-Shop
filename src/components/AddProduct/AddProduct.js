@@ -17,7 +17,7 @@ const AddProduct = () => {
             imageURL: imageURL
         };
         console.log(eventDta)
-        const url = `http://localhost:9000/addProduct`
+        const url = `https://quiet-retreat-77914.herokuapp.com/addProduct`
         fetch(url, {
             method: 'POST',
             headers: {

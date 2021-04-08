@@ -13,7 +13,7 @@ const CheckOut = () => {
   const { id } = useParams();
   console.log(id)
   useEffect(() => {
-    fetch(`http://localhost:9000/product/${id}`)
+    fetch(`https://quiet-retreat-77914.herokuapp.com/product/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [id]);
@@ -22,7 +22,7 @@ const CheckOut = () => {
     const newCheckOut = { ...loggedInUser, ...product, orderTime: new Date().toDateString('dd/mm/yyyy') }
     console.log(newCheckOut);
     delete newCheckOut._id;
-    fetch('http://localhost:9000/addCheckOut', {
+    fetch('https://quiet-retreat-77914.herokuapp.com/addCheckOut', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newCheckOut)

@@ -5,7 +5,7 @@ import Admin from '../Admin/Admin';
 const ManageProduct = () => {
     const [product, setProduct] = useState([])
     useEffect(() => {
-        fetch('http://localhost:9000/booking')
+        fetch('https://quiet-retreat-77914.herokuapp.com/booking')
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
@@ -15,7 +15,7 @@ const ManageProduct = () => {
     function deleteProduct(id, event) {
       
         console.log("delete", id)
-        fetch(`http://localhost:9000/delete/${id}`, {
+        fetch(`https://quiet-retreat-77914.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
