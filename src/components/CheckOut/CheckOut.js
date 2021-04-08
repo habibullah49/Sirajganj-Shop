@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Redirect, useParams } from "react-router";
+import { Redirect, useParams } from "react-router-dom";
 import { useHistory } from 'react-router-dom';
 import { UserContext } from "../../App";
 import Header from "../Header/Header";

@@ -1,7 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 import { useContext, useState } from 'react';
-import { useHistory, useLocation } from "react-router";
+import { useHistory, useLocation } from "react-router-dom";
 import { UserContext } from "../../App";
 import { Form, Button } from 'react-bootstrap';
 
