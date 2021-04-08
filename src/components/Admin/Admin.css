@@ -1,0 +1,14 @@
+.productHeader {
+  width: 100%;
+  background-color: #213e38;
+  display: flex;
+  justify-content: center;
+}
+.navHeader {
+  display: inline-block;
+  color: #fff;
+  padding: 15px 0;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
